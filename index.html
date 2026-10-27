@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RAM1113 ชุดที่ 2 · น้องเหมียวชมพู</title>
+<meta name="description" content="ข้อสอบปรนัยชุดที่ 2 จำนวน 120 ข้อ RAM1113 ภาษาและวัฒนธรรมจีน มีพินอินทุกข้อ พร้อมน้องเหมียวชมพูคอยเชียร์">
+<meta name="theme-color" content="#ffd9e8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="RAM1113 เหมียว">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M10 30 L14 6 L28 18 L36 18 L50 6 L54 30 Q56 56 32 56 Q8 56 10 30Z' fill='%23fff4f8' stroke='%23e8538f' stroke-width='3'/%3E%3Ccircle cx='24' cy='34' r='4' fill='%233b2433'/%3E%3Ccircle cx='40' cy='34' r='4' fill='%233b2433'/%3E%3Cellipse cx='32' cy='41' rx='2.5' ry='2' fill='%23ff7aa8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@400;500&display=swap">
+<style>
+/* Layout: phone-first single column on a candy-pink sparkle ground; sticky chips on top, thumb dock at the bottom, kitten mascot pops up from the dock after every answer */
+:root{
+  --bg:#ffe9f2; --bg2:#ffd9e8; --card:#fffafc; --ink:#4a2a3c; --muted:#9a6a84; --line:#f6c3d8;
+  --pink:#ff5c9a; --pink-deep:#e23d80; --pink-soft:#ffe1ee; --mint:#2fb889; --mint-soft:#dcf7ec; --berry:#e0457b; --berry-soft:#ffe3ea;
+  --lav:#b48cff; --gold:#ffc94d; --on-pink:#ffffff;
+  --f-th:"Mali",system-ui,-apple-system,sans-serif;
+  --f-zh:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --f-cute:"ZCOOL KuaiLe","Mali",sans-serif;
+  --barh:66px; color-scheme:light;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:140px}
+body{margin:0;color:var(--ink);font-family:var(--f-th);font-size:16px;line-height:1.6;background-color:var(--bg);
+  background-image:
+    radial-gradient(circle at 12% 8%,rgba(255,255,255,.9) 0 2px,transparent 3px),
+    radial-gradient(circle at 78% 14%,rgba(255,255,255,.9) 0 1.5px,transparent 2.5px),
+    radial-gradient(circle at 40% 30%,rgba(255,201,77,.55) 0 1.5px,transparent 2.5px),
+    radial-gradient(circle at 90% 46%,rgba(180,140,255,.45) 0 2px,transparent 3px),
+    radial-gradient(circle at 6% 62%,rgba(255,255,255,.95) 0 2px,transparent 3px),
+    radial-gradient(circle at 60% 80%,rgba(255,92,154,.3) 0 2px,transparent 3px),
+    linear-gradient(180deg,var(--bg2),var(--bg) 320px);
+  background-size:220px 220px,260px 260px,180px 180px,300px 300px,240px 240px,280px 280px,100% 100%;
+  background-attachment:fixed}
+.pad{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:760px;margin:0 auto}
+.sparkles{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.sparkles i{position:absolute;color:#fff;font-style:normal;font-size:14px;opacity:.85;text-shadow:0 0 6px rgba(255,92,154,.6)}
+header.top{position:relative;z-index:1;padding-top:calc(18px + env(safe-area-inset-top,0px));padding-bottom:10px;display:flex;gap:12px;align-items:center}
+header.top svg{flex:0 0 78px;width:78px;height:78px}
+.hgroup{display:grid;gap:2px;min-width:0}
+.eyebrow{font-size:12.5px;color:var(--pink-deep);font-weight:600;letter-spacing:.03em}
+h1{font-family:var(--f-cute);font-weight:400;font-size:clamp(23px,6.4vw,32px);line-height:1.25;margin:0;color:var(--pink-deep);text-shadow:2px 2px 0 #fff}
+.lede{color:var(--muted);margin:0;font-size:14px}
+nav.bar{position:sticky;top:0;z-index:5;background:rgba(255,233,242,.92);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);padding-top:env(safe-area-inset-top,0px);border-bottom:2px dotted var(--line)}
+.tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-block:10px 8px}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;border:2px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:14px;font-weight:500;min-height:38px;padding:0 13px;border-radius:999px;cursor:pointer;white-space:nowrap;display:flex;align-items:center;gap:6px}
+.tab small{color:var(--muted);font-variant-numeric:tabular-nums;font-size:12px}
+.tab[aria-selected="true"]{background:var(--pink);border-color:var(--pink);color:var(--on-pink);box-shadow:0 3px 0 var(--pink-deep)}
+.tab[aria-selected="true"] small{color:inherit;opacity:.9}
+.prog{height:8px;background:#fff;border:2px solid var(--line);border-radius:8px;overflow:hidden;margin-bottom:8px}
+.prog i{display:block;height:100%;width:0;background:repeating-linear-gradient(-45deg,var(--pink) 0 8px,#ff8cb8 8px 16px);transition:width .3s}
+.filters{display:flex;gap:6px;padding-bottom:10px}
+.fbtn{font:inherit;font-size:13px;border:2px solid var(--line);background:transparent;color:var(--muted);min-height:32px;padding:0 11px;border-radius:999px;cursor:pointer}
+.fbtn[aria-pressed="true"]{color:var(--pink-deep);border-color:var(--pink);background:var(--card)}
+button:focus-visible{outline:3px solid var(--lav);outline-offset:2px}
+main{position:relative;z-index:1;padding-top:14px;padding-bottom:calc(var(--barh) + 28px + env(safe-area-inset-bottom,0px))}
+.sechead{display:grid;gap:2px;margin-bottom:12px}
+.sechead h2{font-size:18px;margin:0;line-height:1.4;color:var(--pink-deep)}
+.sechead p{margin:0;color:var(--muted);font-size:14px}
+ol.qs{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.q{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:14px;display:grid;gap:10px;min-width:0;box-shadow:0 4px 0 #f9cfe0}
+.qtop{display:flex;gap:8px;align-items:baseline}
+.qn{font-variant-numeric:tabular-nums;font-weight:700;color:var(--on-pink);background:var(--pink);border-radius:999px;padding:0 9px;font-size:14px;flex:0 0 auto;line-height:1.7}
+.qtext{min-width:0;font-size:15.5px}
+.zhline{font-family:var(--f-zh);font-size:21px;line-height:1.5;margin-top:4px;word-break:break-all}
+.pyline{color:var(--muted);font-size:14.5px;font-style:italic}
+.chunks{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chunk{border:2px dashed #f4a6c6;background:#fff;border-radius:12px;padding:4px 10px;display:grid;justify-items:center;min-width:52px}
+.chunk .n{font-size:11.5px;color:var(--pink-deep);font-weight:700}
+.chunk .z{font-family:var(--f-zh);font-size:18px;line-height:1.35}
+.chunk .p{font-size:12px;color:var(--muted);font-style:italic}
+.opts{display:grid;grid-template-columns:1fr;gap:8px}
+@media (min-width:600px){.opts{grid-template-columns:1fr 1fr}}
+.opt{display:flex;gap:10px;align-items:center;text-align:left;font:inherit;background:#fff;color:var(--ink);border:2px solid var(--line);border-radius:14px;padding:10px 12px;min-height:52px;cursor:pointer;min-width:0;width:100%;touch-action:manipulation}
+@media (hover:hover){.opt:hover:not([disabled]){border-color:var(--pink);background:var(--pink-soft)}}
+.opt .k{flex:0 0 28px;height:28px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:13px;color:var(--pink-deep);background:var(--pink-soft);font-variant-numeric:tabular-nums}
+.opt .body{display:grid;min-width:0;line-height:1.4}
+.opt .z{font-family:var(--f-zh);font-size:18px}
+.opt .p{font-size:13px;color:var(--muted);font-style:italic}
+.opt[disabled]{cursor:default}
+.opt.right{background:var(--mint-soft);border-color:var(--mint)}
+.opt.right .k{background:var(--mint);color:#fff}
+.opt.wrong{background:var(--berry-soft);border-color:var(--berry)}
+.opt.wrong .k{background:var(--berry);color:#fff}
+.ex{font-size:14.5px;border-top:2px dotted var(--line);padding-top:10px;display:grid;gap:4px}
+.verdict{font-weight:700}
+.verdict.ok{color:var(--mint)}
+.verdict.no{color:var(--berry)}
+.empty{color:var(--muted);text-align:center;padding:32px 8px;border:2px dashed var(--line);border-radius:20px;background:var(--card)}
+.next{margin-top:18px;width:100%;font:inherit;font-weight:600;min-height:52px;border-radius:999px;border:0;background:var(--pink);color:var(--on-pink);cursor:pointer;box-shadow:0 4px 0 var(--pink-deep)}
+.foot{margin-top:24px;color:var(--muted);font-size:12.5px}
+.foot a{color:var(--pink-deep)}
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--card);border-top:2px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);border-radius:20px 20px 0 0;box-shadow:0 -4px 16px rgba(226,61,128,.12)}
+.dock .wrap{display:flex;align-items:center;gap:8px;min-height:var(--barh)}
+.stat{display:grid;line-height:1.25;flex:1 1 auto;min-width:0}
+.stat b{font-size:17px;font-variant-numeric:tabular-nums;color:var(--pink-deep)}
+.stat span{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dbtn{font:inherit;font-size:14px;font-weight:500;min-height:44px;padding:0 14px;border-radius:999px;border:2px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;white-space:nowrap}
+.dbtn.primary{background:var(--pink);border-color:var(--pink);color:var(--on-pink);box-shadow:0 3px 0 var(--pink-deep)}
+.sheet{position:fixed;inset:0;z-index:20;background:rgba(74,42,60,.35);display:flex;align-items:flex-end;justify-content:center}
+.sheet .card{background:var(--card);width:100%;max-width:520px;border-radius:24px 24px 0 0;padding:18px 16px calc(18px + env(safe-area-inset-bottom,0px));display:grid;gap:10px}
+.sheet h3{margin:0 0 4px;font-size:18px;color:var(--pink-deep)}
+.sheet .row{display:grid;grid-template-columns:1fr auto;gap:4px 12px;font-size:14.5px;font-variant-numeric:tabular-nums}
+.sheet .row span:nth-child(even){text-align:right;font-weight:700}
+.sheet .dbtn{width:100%}
+.danger{color:var(--berry)!important}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(var(--barh) + 14px + env(safe-area-inset-bottom,0px));background:var(--ink);color:#fff;font-size:14px;padding:8px 14px;border-radius:999px;z-index:30}
+
+/* mascot pop-up */
+.pop{position:fixed;left:0;right:0;bottom:calc(var(--barh) + 10px + env(safe-area-inset-bottom,0px));z-index:15;display:flex;justify-content:center;pointer-events:none}
+.pop .bubble{pointer-events:auto;display:flex;align-items:center;gap:10px;background:#fff;border:3px solid var(--pink);border-radius:24px;padding:8px 16px 8px 8px;box-shadow:0 8px 24px rgba(226,61,128,.25);max-width:calc(100% - 32px)}
+.pop.sad .bubble{border-color:var(--lav)}
+.pop svg.kit{width:92px;height:92px;flex:0 0 92px}
+.pop .msg{display:grid;line-height:1.35}
+.pop .msg b{font-size:17px;color:var(--pink-deep)}
+.pop.sad .msg b{color:#7b5bc4}
+.pop .msg span{font-size:13.5px;color:var(--muted)}
+.pop .msg .zh{font-family:var(--f-cute);font-size:16px;color:var(--ink)}
+.burst{position:fixed;pointer-events:none;z-index:16;font-size:20px;left:50%;bottom:calc(var(--barh) + 80px + env(safe-area-inset-bottom,0px))}
+@media (prefers-reduced-motion:no-preference){
+  .opt{transition:border-color .15s,background .15s,transform .06s}
+  .opt:active:not([disabled]){transform:scale(.98)}
+  .pop.show .bubble{animation:popIn .45s cubic-bezier(.2,1.6,.4,1)}
+  .pop.happy svg.kit{animation:hop .6s ease-in-out 2}
+  .pop.sad svg.kit{animation:sway 1.2s ease-in-out}
+  .burst span{position:absolute;animation:fly 1.1s ease-out forwards}
+  .sparkles i{animation:twinkle 2.6s ease-in-out infinite}
+  header.top svg{animation:hop 2.4s ease-in-out infinite}
+}
+@keyframes popIn{from{transform:translateY(40px) scale(.6);opacity:0}to{transform:none;opacity:1}}
+@keyframes hop{0%,100%{transform:translateY(0)}40%{transform:translateY(-10px) rotate(-4deg)}70%{transform:translateY(0) rotate(3deg)}}
+@keyframes sway{0%,100%{transform:rotate(0)}30%{transform:rotate(-6deg)}60%{transform:rotate(5deg)}}
+@keyframes fly{from{transform:translate(0,0) scale(.6);opacity:1}to{transform:translate(var(--dx),var(--dy)) scale(1.2) rotate(var(--rot));opacity:0}}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.7)}50%{opacity:.95;transform:scale(1.15)}}
+</style>
+</head>
+<body>
+<div class="sparkles" id="sparkles" aria-hidden="true"></div>
+<div class="wrap pad">
+  <header class="top">
+    <span id="headKitty" aria-hidden="true"></span>
+    <div class="hgroup">
+      <div class="eyebrow">RAM1113 ภาษาและวัฒนธรรมจีน · ชุดที่ 2</div>
+      <h1>ข้อสอบเสมือนจริง <span style="white-space:nowrap">加油呀！</span></h1>
+      <p class="lede">120 ข้อใหม่ ไม่ซ้ำชุดแรก · มีพินอินทุกข้อ · น้องเหมียวรอเชียร์อยู่</p>
+    </div>
+  </header>
+</div>
+<nav class="bar" aria-label="หมวดข้อสอบ">
+  <div class="wrap pad">
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div class="prog" aria-hidden="true"><i id="prog"></i></div>
+    <div class="filters" role="group" aria-label="แสดงข้อ">
+      <button class="fbtn" data-f="all" type="button">ทั้งหมด</button>
+      <button class="fbtn" data-f="todo" type="button">ยังไม่ทำ</button>
+      <button class="fbtn" data-f="wrong" type="button">ข้อที่ผิด</button>
+    </div>
+  </div>
+</nav>
+<main class="wrap pad">
+  <div class="sechead"><h2 id="secTitle"></h2><p id="secDesc"></p></div>
+  <ol class="qs" id="qs"></ol>
+  <button class="next" id="nextSec" type="button" hidden></button>
+  <p class="foot">เนื้อหาอ้างอิงตำรา RAM1113 ภาษาและวัฒนธรรมจีน บทที่ 1–10 และภาคผนวก · คำตอบเก็บไว้ในเครื่องนี้ · <a href="https://kriangdet-piamchaeng.github.io/ram1113-exam/">ไปทำชุดที่ 1</a></p>
+</main>
+<div class="pop" id="pop" hidden aria-live="polite"><div class="bubble" id="popBubble"></div></div>
+<div class="dock">
+  <div class="wrap pad">
+    <div class="stat"><b id="secScore">ถูก 0/10</b><span id="allScore">รวม 0/120 · ทำแล้ว 0</span></div>
+    <button class="dbtn" id="menuBtn" type="button">เมนู</button>
+    <button class="dbtn primary" id="jump" type="button">ข้อถัดไป ↓</button>
+  </div>
+</div>
+<div class="sheet" id="sheet" hidden>
+  <div class="card" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <h3 id="sheetTitle">คะแนนของเรา</h3>
+    <div class="row" id="summary"></div>
+    <button class="dbtn" id="showAll" type="button">ดูเฉลยหมวดนี้ทั้งหมด</button>
+    <button class="dbtn danger" id="reset" type="button">ล้างคำตอบหมวดนี้</button>
+    <button class="dbtn danger" id="resetAll" type="button">ล้างคำตอบทั้งชุด</button>
+    <button class="dbtn primary" id="closeSheet" type="button">ปิด</button>
+  </div>
+</div>
+<script>
+const SECTIONS = [
+{id:"zh-th", name:"แปลจีน→ไทย", desc:"เลือกความหมายภาษาไทยที่ถูกต้องของคำหรือวลีภาษาจีน", qs:[
+ {zh:"请客",py:"qǐng kè",o:["เลี้ยง เป็นเจ้ามือ","เชิญแขกมาที่บ้าน","เป็นแขกของงาน","ทำอาหารให้แขก"],e:"请客 = เลี้ยง เป็นเจ้ามือ (บทที่ 5: 今天我请客。)"},
+ {zh:"服务员",py:"fúwùyuán",o:["พนักงานเสิร์ฟ บริกร","ผู้จัดการร้าน","พ่อครัว","เจ้าของร้าน"],e:"服务员 = พนักงานบริการ บริกร (บทที่ 5: 服务员！我们要两碗米饭……)"},
+ {zh:"工资",py:"gōngzī",o:["เงินเดือน ค่าจ้าง","ค่าเช่าบ้าน","ราคาสินค้า","เงินทอน"],e:"工资 = ค่าจ้าง เงินเดือน (บทที่ 3: 朋友说那儿的工资也不错)"},
+ {zh:"电视剧",py:"diànshìjù",o:["ละครโทรทัศน์","ภาพยนตร์โรง","รายการข่าว","รายการเพลง"],e:"电视剧 = ละครโทรทัศน์ (บทที่ 3: 我喜欢看韩国电视剧)"},
+ {zh:"附近",py:"fùjìn",o:["แถวนี้ บริเวณใกล้เคียง","ฝั่งตรงข้าม","ทางแยก","ที่ไกลออกไป"],e:"附近 = บริเวณใกล้ ๆ (บทที่ 9: 这儿附近有纪念品店吗？)"},
+ {zh:"改天",py:"gǎitiān",o:["วันหลัง วันอื่น","วันนี้","เมื่อวาน","ทุกวัน"],e:"改天 = วันหลัง ไว้วันอื่น (บทที่ 9: 好，改天我去看看。)"},
+ {zh:"照顾",py:"zhàogù",o:["ดูแล","ไปเยี่ยม","ตามหา","ทักทาย"],e:"照顾 = ดูแล (บทที่ 10: 最近我得照顾妹妹)"},
+ {zh:"复习",py:"fùxí",o:["ทบทวนบทเรียน","ทำการบ้าน","สอบปลายภาค","เรียนล่วงหน้า"],e:"复习 = ทบทวน, 复习资料 = เอกสารทบทวน (บทที่ 10)"},
+ {zh:"刚好",py:"gānghǎo",o:["พอดี","เพิ่งจะ","เกือบจะ","ไม่ค่อย"],e:"刚好 = พอดี (บทที่ 7: 今天我刚好有空。)"},
+ {zh:"合适",py:"héshì",o:["เหมาะสม","ราคาถูก","ราคาแพง","สวยงาม"],e:"合适 = เหมาะสม (บทที่ 7: 价格也合适)"}
+]},
+{id:"th-zh", name:"แปลไทย→จีน", desc:"เลือกคำภาษาจีนที่ตรงกับความหมายภาษาไทย", qs:[
+ {th:"คุณย่า (แม่ของพ่อ)",o:["奶奶|nǎinai","外婆|wàipó","爷爷|yéye","姐姐|jiějie"],e:"奶奶 = คุณย่า, 爷爷 = คุณปู่, 外婆 = คุณยาย, 姐姐 = พี่สาว"},
+ {th:"ผู้จัดการ",o:["经理|jīnglǐ","警察|jǐngchá","老板|lǎobǎn","服务员|fúwùyuán"],e:"经理 = ผู้จัดการ (บทที่ 3: 我爸爸是经理。)"},
+ {th:"กาแฟ",o:["咖啡|kāfēi","汽水|qìshuǐ","橘汁|júzhī","茶|chá"],e:"咖啡 = กาแฟ, 汽水 = น้ำอัดลม, 橘汁 = น้ำส้ม, 茶 = ชา"},
+ {th:"รถไฟใต้ดิน",o:["地铁|dìtiě","公交车|gōngjiāochē","车站|chēzhàn","电脑|diànnǎo"],e:"地铁 = รถไฟใต้ดิน (บทที่ 9: 你想坐公交车还是坐地铁？)"},
+ {th:"โทรศัพท์มือถือ",o:["手机|shǒujī","电话|diànhuà","电脑|diànnǎo","微信|wēixìn"],e:"手机 = โทรศัพท์มือถือ, 电话 = โทรศัพท์ การโทร (บทที่ 10: 我的手机丢了)"},
+ {th:"ห้างสรรพสินค้า",o:["商场|shāngchǎng","市场|shìchǎng","图书馆|túshūguǎn","餐厅|cāntīng"],e:"商场 = ห้างสรรพสินค้า, 市场 = ตลาด (บทที่ 7: 一起去商场买吧)"},
+ {th:"แต่งงาน",o:["结婚|jiéhūn","认识|rènshi","分手|fēnshǒu","见面|jiànmiàn"],e:"结婚 = แต่งงาน, 分手 = เลิกกัน แยกทาง, 见面 = พบหน้า"},
+ {th:"วันเสาร์",o:["星期六|xīngqīliù","星期天|xīngqītiān","周末|zhōumò","明天|míngtiān"],e:"星期六 = วันเสาร์, 星期天 = วันอาทิตย์, 周末 = สุดสัปดาห์"},
+ {th:"การบ้าน",o:["作业|zuòyè","工作|gōngzuò","资料|zīliào","游戏|yóuxì"],e:"作业 = การบ้าน (บทที่ 8: 我们先做完作业)"},
+ {th:"อร่อย",o:["好吃|hǎochī","好看|hǎokàn","好听|hǎotīng","好玩|hǎowán"],e:"好吃 = อร่อย, 好看 = สวย น่าดู, 好听 = เพราะ, 好玩 = สนุก"}
+]},
+{id:"sent", name:"แปลประโยค", desc:"เลือกคำแปลที่ถูกต้องของประโยค", qs:[
+ {zh:"你想不想回泰国？",py:"Nǐ xiǎng bu xiǎng huí Tàiguó?",o:["คุณอยากกลับประเทศไทยไหม","คุณกลับประเทศไทยหรือยัง","คุณไม่อยากกลับประเทศไทยใช่ไหม","ใครอยากกลับประเทศไทยบ้าง"],e:"想不想 + กริยา = อยาก…ไหม (คำถามแบบบอกเล่า + ปฏิเสธ)"},
+ {zh:"汉语听和说比较容易，读和写比较难。",py:"Hànyǔ tīng hé shuō bǐjiào róngyì, dú hé xiě bǐjiào nán.",o:["ภาษาจีนฟังกับพูดค่อนข้างง่าย อ่านกับเขียนค่อนข้างยาก","ภาษาจีนฟังกับพูดยาก อ่านกับเขียนง่าย","ภาษาจีนยากทุกทักษะ","ภาษาจีนอ่านง่ายกว่าภาษาไทย"],e:"比较 = ค่อนข้าง, 容易 = ง่าย, 难 = ยาก"},
+ {zh:"不要了，一共多少钱？",py:"Bú yào le, yígòng duōshao qián?",o:["ไม่เอาแล้ว ทั้งหมดเท่าไร","ไม่เอา ลดได้ไหม","ไม่ต้องทอน เท่าไรนะ","ไม่เอาแล้ว แพงเกินไป"],e:"一共 = ทั้งหมด รวม, 多少钱 = เท่าไร"},
+ {zh:"对不起，今天晚上我没空。",py:"Duìbuqǐ, jīntiān wǎnshang wǒ méi kòng.",o:["ขอโทษนะ คืนนี้ฉันไม่ว่าง","ขอโทษนะ คืนนี้ฉันว่าง","ขอโทษนะ เมื่อคืนฉันไม่ว่าง","ไม่เป็นไร พรุ่งนี้ฉันไม่ว่าง"],e:"没空 = ไม่ว่าง, 今天晚上 = คืนนี้"},
+ {zh:"我的手机丢了。",py:"Wǒ de shǒujī diū le.",o:["โทรศัพท์มือถือของฉันหาย","ฉันซื้อโทรศัพท์มือถือใหม่","โทรศัพท์มือถือของฉันเสีย","ฉันลืมเอาโทรศัพท์มือถือมา"],e:"丢 = หาย ทำหาย (บทที่ 10)"},
+ {zh:"他一吃饱就去。",py:"Tā yì chī bǎo jiù qù.",o:["พอเขากินอิ่มก็ไปทันที","เขากินคนเดียวแล้วก็ไป","เขาไม่อิ่มก็เลยไป","เขาไปกินจนอิ่ม"],e:"一……就…… = พอ…ก็…"},
+ {zh:"你往前走，再往左拐就到了。",py:"Nǐ wǎng qián zǒu, zài wǎng zuǒ guǎi jiù dào le.",o:["เดินตรงไปข้างหน้า แล้วเลี้ยวซ้ายก็ถึง","เดินถอยหลัง แล้วเลี้ยวขวาก็ถึง","เลี้ยวซ้ายก่อน แล้วเดินตรงไป","เดินตรงไปแล้วจะเห็นทางซ้ายมือ"],e:"往前走 = เดินไปข้างหน้า, 往左拐 = เลี้ยวซ้าย, 就到了 = ก็ถึงแล้ว"},
+ {zh:"老师说得有点儿快。",py:"Lǎoshī shuō de yǒudiǎnr kuài.",o:["อาจารย์พูดเร็วไปหน่อย","อาจารย์พูดช้ามาก","อาจารย์พูดเร็วมากจนดี","อาจารย์อยากพูดให้เร็วขึ้น"],e:"有点儿 + คุณศัพท์ = …ไปหน่อย (ระดับเล็กน้อยที่ไม่พึงประสงค์)"},
+ {th:"“พวกเราไปกินข้าวด้วยกันเถอะ” ภาษาจีนคือข้อใด",o:["我们一起去吃饭吧。|Wǒmen yìqǐ qù chī fàn ba.","我们一起去吃饭吗？|Wǒmen yìqǐ qù chī fàn ma?","我们不去吃饭了。|Wǒmen bú qù chī fàn le.","我们吃饭了。|Wǒmen chī fàn le."],e:"吧 ท้ายประโยคใช้ชักชวน เสนอแนะ"},
+ {th:"“พี่ชายของคุณแต่งงานหรือยัง” ภาษาจีนคือข้อใด",o:["你哥哥结婚了吗？|Nǐ gēge jiéhūn le ma?","你姐姐结婚了吗？|Nǐ jiějie jiéhūn le ma?","你哥哥有女朋友吗？|Nǐ gēge yǒu nǚ péngyou ma?","你哥哥什么时候结婚？|Nǐ gēge shénme shíhou jiéhūn?"],e:"结婚了吗 = แต่งงานแล้วหรือยัง, 哥哥 = พี่ชาย"}
+]},
+{id:"order", name:"เรียงประโยค", desc:"เลือกลำดับคำที่ประกอบเป็นประโยคที่ถูกต้อง", qs:[
+ {ch:["工作|gōngzuò","在|zài","你爸爸|nǐ bàba","哪儿|nǎr"],o:["3-2-4-1","3-4-2-1","2-4-3-1","3-1-2-4"],ans:"你爸爸在哪儿工作？|Nǐ bàba zài nǎr gōngzuò?",e:"ประธาน + 在 + 哪儿 + กริยา = …ทำ…ที่ไหน"},
+ {ch:["很高兴|hěn gāoxìng","认识|rènshi","我也|wǒ yě","你|nǐ"],o:["2-4-3-1","4-3-1-2","2-3-4-1","4-2-1-3"],ans:"认识你，我也很高兴。|Rènshi nǐ, wǒ yě hěn gāoxìng.",e:"ประโยคตอบรับการทักทายแนะนำตัว (บทที่ 2)"},
+ {ch:["一斤|yì jīn","草莓|cǎoméi","钱|qián","多少|duōshao"],o:["2-4-3-1","2-3-4-1","2-1-3-4","4-3-2-1"],ans:"草莓多少钱一斤？|Cǎoméi duōshao qián yì jīn?",e:"ถามราคาต่อชั่ง: 多少钱一斤 (หรือ 一斤多少钱 ก็ได้)"},
+ {ch:["给|gěi","妈妈|māma","打电话|dǎ diànhuà","我|wǒ"],o:["2-1-4-3","2-4-1-3","1-2-4-3","2-3-1-4"],ans:"妈妈给我打电话。|Māma gěi wǒ dǎ diànhuà.",e:"给 + ผู้รับ + กริยา (给 เป็นบุพบท)"},
+ {ch:["过|guo","我|wǒ","没去|méi qù","图书馆|túshūguǎn"],o:["2-3-1-4","2-3-4-1","3-2-1-4","2-1-3-4"],ans:"我没去过图书馆。|Wǒ méi qù guo túshūguǎn.",e:"没 + กริยา + 过 + กรรม = ไม่เคย…"},
+ {ch:["太|tài","这件衣服|zhè jiàn yīfu","了|le","贵|guì"],o:["2-1-4-3","2-4-1-3","1-4-3-2","2-1-3-4"],ans:"这件衣服太贵了。|Zhè jiàn yīfu tài guì le.",e:"太 + คุณศัพท์ + 了 = …เกินไป"},
+ {ch:["你|nǐ","还是|háishi","喝茶|hē chá","喝咖啡|hē kāfēi"],o:["1-3-2-4","2-1-3-4","1-2-3-4","3-1-4-2"],ans:"你喝茶还是喝咖啡？|Nǐ hē chá háishi hē kāfēi?",e:"A 还是 B = A หรือ B (คำถามให้เลือก)"},
+ {ch:["让|ràng","我请|wǒ qǐng","这次|zhè cì","吧|ba"],o:["3-1-2-4","2-1-3-4","3-2-1-4","2-3-1-4"],ans:"这次让我请吧。|Zhè cì ràng wǒ qǐng ba.",e:"让 + คน + กริยา = ให้…ทำ… (บทที่ 9: 这次让我请吧)"},
+ {ch:["发给我|fā gěi wǒ","把地址|bǎ dìzhǐ","你|nǐ","用微信|yòng wēixìn"],o:["3-4-2-1","2-3-4-1","4-3-1-2","3-1-2-4"],ans:"你用微信把地址发给我。|Nǐ yòng wēixìn bǎ dìzhǐ fā gěi wǒ.",e:"ประธาน + วิธีการ (用微信) + 把 + สิ่งที่ถูกจัดการ + กริยา"},
+ {ch:["是|shì","坐公交车|zuò gōngjiāochē","爸爸|bàba","去的|qù de"],o:["3-1-2-4","3-2-1-4","3-4-1-2","3-2-4-1"],ans:"爸爸是坐公交车去的。|Bàba shì zuò gōngjiāochē qù de.",e:"是……的 เน้นวิธีการ: พ่อนั่งรถเมล์ไป"}
+]},
+{id:"correct", name:"เลือกประโยคที่ถูก", desc:"เลือกประโยคที่ถูกต้องตามหลักไวยากรณ์", qs:[
+ {th:"ข้อใดถูกต้อง",o:["我也很好。|Wǒ yě hěn hǎo.","也我很好。|Yě wǒ hěn hǎo.","我很也好。|Wǒ hěn yě hǎo.","我很好也。|Wǒ hěn hǎo yě."],e:"也 วางหลังประธาน หน้าภาคแสดง"},
+ {th:"ข้อใดถูกต้อง",o:["这是我的汉语老师。|Zhè shì wǒ de Hànyǔ lǎoshī.","这是我汉语的老师。|Zhè shì wǒ Hànyǔ de lǎoshī.","我的这是汉语老师。|Wǒ de zhè shì Hànyǔ lǎoshī.","这是老师我的汉语。|Zhè shì lǎoshī wǒ de Hànyǔ."],e:"ส่วนขยายอยู่หน้าคำนามเสมอ: 我的 + 汉语老师"},
+ {th:"ข้อใดถูกต้อง",o:["他在一家外贸公司工作。|Tā zài yì jiā wàimào gōngsī gōngzuò.","他工作在一家外贸公司。|Tā gōngzuò zài yì jiā wàimào gōngsī.","他在一所外贸公司工作。|Tā zài yì suǒ wàimào gōngsī gōngzuò.","他一家在外贸公司工作。|Tā yì jiā zài wàimào gōngsī gōngzuò."],e:"在 + สถานที่ วางหน้ากริยา และบริษัทใช้ลักษณนาม 家"},
+ {th:"ข้อใดถูกต้อง",o:["我没有哥哥。|Wǒ méiyǒu gēge.","我不有哥哥。|Wǒ bù yǒu gēge.","我有没哥哥。|Wǒ yǒu méi gēge.","我没哥哥有。|Wǒ méi gēge yǒu."],e:"ปฏิเสธ 有 ต้องใช้ 没有 เสมอ ไม่ใช้ 不有"},
+ {th:"ข้อใดถูกต้อง",o:["你吃过北京烤鸭吗？|Nǐ chī guo Běijīng kǎoyā ma?","你过吃北京烤鸭吗？|Nǐ guo chī Běijīng kǎoyā ma?","你吃北京烤鸭过吗？|Nǐ chī Běijīng kǎoyā guo ma?","你吃了过北京烤鸭吗？|Nǐ chī le guo Běijīng kǎoyā ma?"],e:"过 ติดหลังกริยาทันที: 吃过"},
+ {th:"ข้อใดถูกต้อง",o:["我会说汉语。|Wǒ huì shuō Hànyǔ.","我说会汉语。|Wǒ shuō huì Hànyǔ.","我会汉语说。|Wǒ huì Hànyǔ shuō.","会我说汉语。|Huì wǒ shuō Hànyǔ."],e:"กริยาช่วย 会 วางหน้ากริยาหลัก"},
+ {th:"ข้อใดถูกต้อง",o:["学校离我家很远。|Xuéxiào lí wǒ jiā hěn yuǎn.","学校从我家很远。|Xuéxiào cóng wǒ jiā hěn yuǎn.","离学校我家很远。|Lí xuéxiào wǒ jiā hěn yuǎn.","学校离很远我家。|Xuéxiào lí hěn yuǎn wǒ jiā."],e:"บอกระยะห่างใช้ A + 离 + B + 远/近 ไม่ใช้ 从"},
+ {th:"ข้อใดถูกต้อง",o:["你记得给她打电话。|Nǐ jìde gěi tā dǎ diànhuà.","你给她记得打电话。|Nǐ gěi tā jìde dǎ diànhuà.","记得你给她打电话。|Jìde nǐ gěi tā dǎ diànhuà.","你给她打电话记得。|Nǐ gěi tā dǎ diànhuà jìde."],e:"记得 + เรื่องที่ต้องทำ = อย่าลืม… (ใช้เตือน)"},
+ {th:"ข้อใดถูกต้อง",o:["小赵是去年结婚的。|Xiǎo Zhào shì qùnián jiéhūn de.","小赵去年是结婚的。|Xiǎo Zhào qùnián shì jiéhūn de.","是小赵去年结婚。|Shì Xiǎo Zhào qùnián jiéhūn.","小赵是结婚去年的。|Xiǎo Zhào shì jiéhūn qùnián de."],e:"是 วางหน้าส่วนที่ต้องการเน้น (去年) และ 的 อยู่ท้าย"},
+ {th:"ข้อใดถูกต้อง",o:["我们先做完作业，再去看。|Wǒmen xiān zuò wán zuòyè, zài qù kàn.","我们再做完作业，先去看。|Wǒmen zài zuò wán zuòyè, xiān qù kàn.","先我们做完作业，再我们去看。|Xiān wǒmen zuò wán zuòyè, zài wǒmen qù kàn.","我们做完先作业，去看再。|Wǒmen zuò wán xiān zuòyè, qù kàn zài."],e:"先 + กริยา (ก่อน), 再 + กริยา (แล้วค่อย) วางหลังประธาน"}
+]},
+{id:"fill", name:"เติมคำ", desc:"เลือกคำที่เหมาะสมเติมในช่องว่าง", qs:[
+ {zh:"王平：你爸爸、妈妈好吗？　田芳：他们____很好。",py:"Wáng Píng: Nǐ bàba, māma hǎo ma?  Tián Fāng: Tāmen ____ hěn hǎo.",o:["都|dōu","吗|ma","呢|ne","的|de"],e:"ประธานพหูพจน์ ใช้ 都 = ทั้งคู่ ล้วน"},
+ {zh:"田芳：我很好，你呢？　王平：我____很好。",py:"Tián Fāng: Wǒ hěn hǎo, nǐ ne?  Wáng Píng: Wǒ ____ hěn hǎo.",o:["也|yě","都|dōu","吗|ma","呢|ne"],e:"也 = ก็…เหมือนกัน ประธานเอกพจน์จึงไม่ใช้ 都"},
+ {zh:"白小虹：请问，张明老师____吗？",py:"Bái Xiǎohóng: Qǐngwèn, Zhāng Míng lǎoshī ____ ma?",o:["在|zài","是|shì","有|yǒu","去|qù"],e:"在 เป็นกริยา = อยู่ (ถามว่าอาจารย์อยู่ไหม)"},
+ {zh:"白小虹：我是张老师____朋友。",py:"Bái Xiǎohóng: Wǒ shì Zhāng lǎoshī ____ péngyou.",o:["的|de","得|de","了|le","吗|ma"],e:"的 เชื่อมผู้เป็นเจ้าของกับคำนาม"},
+ {zh:"张明，你来了！我们一起吃饭____。",py:"Zhāng Míng, nǐ lái le! Wǒmen yìqǐ chī fàn ____.",o:["吧|ba","吗|ma","呢|ne","的|de"],e:"吧 ท้ายประโยคใช้ชักชวน"},
+ {zh:"我爸爸是警察。你爸爸____？",py:"Wǒ bàba shì jǐngchá. Nǐ bàba ____?",o:["呢|ne","吗|ma","吧|ba","了|le"],e:"呢 ถามย้อนเรื่องเดียวกัน = แล้วพ่อคุณล่ะ"},
+ {zh:"你想找什么____的工作呢？",py:"Nǐ xiǎng zhǎo shénme ____ de gōngzuò ne?",o:["样|yàng","个|ge","些|xiē","点|diǎn"],e:"什么样的 = แบบไหน อย่างไหน"},
+ {zh:"我喜欢看韩国电视剧，____很好看。",py:"Wǒ xǐhuan kàn Hánguó diànshìjù, ____ hěn hǎokàn.",o:["觉得|juéde","知道|zhīdào","认识|rènshi","可以|kěyǐ"],e:"觉得 = รู้สึกว่า คิดว่า"},
+ {zh:"李老师：你家有几口人？有____呢？",py:"Lǐ lǎoshī: Nǐ jiā yǒu jǐ kǒu rén? Yǒu ____ ne?",o:["谁|shéi","几|jǐ","什么|shénme","哪儿|nǎr"],e:"ถามว่ามีใครบ้าง ใช้ 谁"},
+ {zh:"甘：“妈妈的爸爸”中文____说？",py:"Gān: “Māma de bàba” Zhōngwén ____ shuō?",o:["怎么|zěnme","什么|shénme","哪儿|nǎr","几|jǐ"],e:"怎么 + กริยา = …อย่างไร"},
+ {zh:"林美英：你哥哥结婚了吗？对不起，____问吗？",py:"Lín Měiyīng: Nǐ gēge jiéhūn le ma? Duìbuqǐ, ____ wèn ma?",o:["可以|kěyǐ","会|huì","得|děi","过|guo"],e:"可以 = ได้ (ขออนุญาต)"},
+ {zh:"林美英：我和你是好朋友____，不用客气了。",py:"Lín Měiyīng: Wǒ hé nǐ shì hǎo péngyou ____, búyòng kèqi le.",o:["嘛|ma","吗|ma","呢|ne","的|de"],e:"嘛 แสดงน้ำเสียงว่าเป็นเรื่องที่ชัดเจนอยู่แล้ว (ก็…นี่นา)"},
+ {zh:"甘：天气____热，你喝点儿吧。",py:"Gān: Tiānqì ____ rè, nǐ hē diǎnr ba.",o:["这么|zhème","什么|shénme","怎么|zěnme","多少|duōshao"],e:"这么 + คุณศัพท์ = …ขนาดนี้"},
+ {zh:"张老师：我吃饱了，您____吃。",py:"Zhāng lǎoshī: Wǒ chī bǎo le, nín ____ chī.",o:["慢慢|mànmàn","快快|kuàikuài","常常|chángcháng","刚刚|gānggāng"],e:"您慢慢吃 = เชิญทานตามสบาย เป็นคำสุภาพเมื่อลุกก่อน"},
+ {zh:"方校长：你再加____饭吧。",py:"Fāng xiàozhǎng: Nǐ zài jiā ____ fàn ba.",o:["点儿|diǎnr","一下|yíxià","有点儿|yǒudiǎnr","个|ge"],e:"กริยา + (一)点儿 + คำนาม = …อีกหน่อย"},
+ {zh:"售货员：你们还要____的吗？",py:"Shòuhuòyuán: Nǐmen hái yào ____ de ma?",o:["别|bié","什么|shénme","哪|nǎ","好|hǎo"],e:"别的 = อย่างอื่น"},
+ {zh:"售货员：一共十四____五。",py:"Shòuhuòyuán: Yígòng shísì ____ wǔ.",o:["块|kuài","斤|jīn","个|ge","分|fēn"],e:"十四块五 = 14.50 หยวน (块 คือหน่วยเงินในภาษาพูด)"},
+ {zh:"白小虹：这件不大____不小。我要这件。",py:"Bái Xiǎohóng: Zhè jiàn bú dà ____ bù xiǎo. Wǒ yào zhè jiàn.",o:["也|yě","都|dōu","还|hái","就|jiù"],e:"不……也不…… = ไม่…และก็ไม่… (พอดี)"},
+ {zh:"美女，不要走____那么快！",py:"Měinǚ, búyào zǒu ____ nàme kuài!",o:["得|de","的|de","了|le","过|guo"],e:"กริยา + 得 + ส่วนเสริมบอกระดับ"},
+ {zh:"漂亮____漂亮，但是我们中国人不送伞。",py:"Piàoliang ____ piàoliang, dànshì wǒmen Zhōngguó rén bú sòng sǎn.",o:["是|shì","很|hěn","也|yě","都|dōu"],e:"A 是 A，但是…… = …ก็จริงอยู่ แต่…"},
+ {zh:"李老师：他的女儿____一岁，对吗？",py:"Lǐ lǎoshī: Tā de nǚ'ér ____ yí suì, duì ma?",o:["刚|gāng","都|dōu","也|yě","还是|háishi"],e:"刚 = เพิ่งจะ"},
+ {zh:"张老师：我觉得那一只____可爱。",py:"Zhāng lǎoshī: Wǒ juéde nà yì zhī ____ kě'ài.",o:["更|gèng","都|dōu","还是|háishi","一点儿|yìdiǎnr"],e:"更 = ยิ่งกว่า มากกว่า (เปรียบเทียบ)"},
+ {zh:"何洁：我常常去图书馆看书，____上网玩游戏。",py:"Hé Jié: Wǒ chángcháng qù túshūguǎn kàn shū, ____ shàng wǎng wán yóuxì.",o:["或者|huòzhě","还是|háishi","因为|yīnwèi","所以|suǒyǐ"],e:"ประโยคบอกเล่าที่ให้เลือก ใช้ 或者 = หรือ"},
+ {zh:"何洁：美英告诉____我，你唱歌唱得很好听。",py:"Hé Jié: Měiyīng gàosu ____ wǒ, nǐ chàng gē chàng de hěn hǎotīng.",o:["过|guo","得|de","在|zài","着|zhe"],e:"กริยา + 过 = เคย… (เคยบอก)"},
+ {zh:"何洁：好啊，人多____好玩。",py:"Hé Jié: Hǎo a, rén duō ____ hǎowán.",o:["才|cái","就|jiù","也|yě","都|dōu"],e:"才 = ถึงจะ… (คนเยอะถึงจะสนุก)"},
+ {zh:"甘：等你有空，能不能____我打麻将？",py:"Gān: Děng nǐ yǒu kòng, néng bu néng ____ wǒ dǎ májiàng?",o:["教|jiāo","学|xué","跟|gēn","给|gěi"],e:"教 + คน + สิ่งที่สอน = สอน…ให้…"},
+ {zh:"往东一直走三百____，电脑店就在地铁站旁边。",py:"Wǎng dōng yìzhí zǒu sānbǎi ____, diànnǎo diàn jiù zài dìtiě zhàn pángbiān.",o:["米|mǐ","斤|jīn","块|kuài","口|kǒu"],e:"米 = เมตร"},
+ {zh:"白小虹：从我家往西走，到十字路口____再往北走。",py:"Bái Xiǎohóng: Cóng wǒ jiā wǎng xī zǒu, dào shízì lùkǒu ____ zài wǎng běi zǒu.",o:["以后|yǐhòu","以前|yǐqián","时候|shíhou","旁边|pángbiān"],e:"……以后 = หลังจาก…"},
+ {zh:"甘：好啊，你____微信把地址发给我。",py:"Gān: Hǎo a, nǐ ____ wēixìn bǎ dìzhǐ fā gěi wǒ.",o:["用|yòng","在|zài","给|gěi","跟|gēn"],e:"用 + เครื่องมือ = ใช้…(ทำ…)"},
+ {zh:"如果以后你再来北京____，一定要来找我哦！",py:"Rúguǒ yǐhòu nǐ zài lái Běijīng ____, yídìng yào lái zhǎo wǒ o!",o:["的话|dehuà","以后|yǐhòu","时候|shíhou","所以|suǒyǐ"],e:"如果……的话 = ถ้าหาก…"}
+]},
+{id:"culture", name:"วัฒนธรรม", desc:"ความรู้ด้านวัฒนธรรมจีนจากหัวข้อ 文化知识 (wénhuà zhīshi) ทั้ง 10 บท", qs:[
+ {th:"ทักทายอาจารย์แซ่ติงในตอนเช้า ข้อใดเหมาะสมที่สุด",o:["丁老师，早上好！|Dīng lǎoshī, zǎoshang hǎo!","老师丁，早上好！|Lǎoshī Dīng, zǎoshang hǎo!","丁老师，晚上好！|Dīng lǎoshī, wǎnshang hǎo!","丁，拜拜！|Dīng, bàibài!"],e:"แซ่ + 老师 แล้วตามด้วย 早上好 สำหรับตอนเช้า"},
+ {th:"บอกลาผู้อาวุโสว่า “พบกันพรุ่งนี้” ข้อใดถูก",o:["明天见！|Míngtiān jiàn!","下次见！|Xiàcì jiàn!","晚上好！|Wǎnshang hǎo!","您好！|Nín hǎo!"],e:"明天见 = พบกันพรุ่งนี้, 下次见 = พบกันครั้งหน้า"},
+ {th:"คำว่า 告辞 (gàocí) หมายถึงข้อใด",o:["กล่าวลา","พบหน้า","ทักทาย","แนะนำตัว"],e:"见面 = พบหน้า, 告辞 = กล่าวลา (บทที่ 1)"},
+ {th:"ถามไถ่อย่างเป็นกันเองว่า “จะไปไหนเหรอ” ข้อใดถูก",o:["你上哪儿呢？|Nǐ shàng nǎr ne?","你是哪里人？|Nǐ shì nǎlǐ rén?","你在哪儿工作？|Nǐ zài nǎr gōngzuò?","你家在哪儿？|Nǐ jiā zài nǎr?"],e:"上哪儿 = ไปไหน ชาวจีนไม่ถือว่าเป็นการละลาบละล้วง"},
+ {th:"ตามตำรา การไหว้ของไทยแบ่งเป็นกี่ระดับ",o:["3 ระดับ","2 ระดับ","4 ระดับ","5 ระดับ"],e:"ไหว้พระ ไหว้ผู้ใหญ่ และไหว้ระดับเดียวกันหรือรับไหว้"},
+ {th:"เมื่อทำความรู้จักกัน ชาวจีนมักทำอย่างไร",o:["แนะนำตัวเองก่อน แล้วค่อยถามแซ่และชื่อของคู่สนทนา","ถามชื่อคู่สนทนาก่อนทุกครั้ง","ถามอายุก่อนแนะนำตัว","ให้ผู้อาวุโสแนะนำตัวก่อน"],e:"คนจีนมักแนะนำตัวเองก่อน และมักถามแซ่ก่อนชื่อ"},
+ {th:"“Mrs. Chen” ภาษาจีนเรียกว่าอย่างไร",o:["陈女士|Chén nǚshì","陈小姐|Chén xiǎojiě","陈先生|Chén xiānsheng","女士陈|Nǚshì Chén"],e:"แซ่ + 女士 = Mrs./Ms., 小姐 = Miss, 先生 = Mr."},
+ {th:"ข้อใดถูกต้องเรื่องมารยาทการเรียกขานของชาวจีน",o:["ไม่เรียกชื่อผู้อาวุโสถ้าไม่จำเป็น มักเรียกแซ่ตามด้วยคำเรียกขาน","เรียกชื่อเล่นของผู้อาวุโสได้เลย","เรียกคำเรียกขานก่อนแล้วตามด้วยแซ่","เรียกเฉพาะชื่อโดยไม่ต้องมีแซ่"],e:"เช่น 张老师 陈先生 โดยมารยาทไม่เรียกชื่อผู้อาวุโส"},
+ {th:"เมื่อผู้อาวุโสพูดว่า 认识您很高兴 (Rènshi nín hěn gāoxìng) ควรตอบว่าอย่างไร",o:["认识您，我也很高兴。|Rènshi nín, wǒ yě hěn gāoxìng.","不客气。|Bú kèqi.","没关系。|Méi guānxi.","您贵姓？|Nín guìxìng?"],e:"ตอบว่าได้รู้จักคุณ ฉันก็ดีใจเช่นกัน"},
+ {th:"ถามว่า “บ้านเกิดของคุณอยู่ที่ไหน” ข้อใดถูก",o:["你老家在哪儿？|Nǐ lǎojiā zài nǎr?","你在哪儿学习？|Nǐ zài nǎr xuéxí?","你跟谁住在一起？|Nǐ gēn shéi zhù zài yìqǐ?","你上哪儿呢？|Nǐ shàng nǎr ne?"],e:"老家 = บ้านเกิด"},
+ {th:"คำย่อ 超市 (chāoshì) ย่อมาจากคำใด",o:["超级市场|chāojí shìchǎng","超级商场|chāojí shāngchǎng","市场超级|shìchǎng chāojí","超大市区|chāodà shìqū"],e:"超级市场 = ซูเปอร์มาร์เก็ต ย่อเป็น 超市"},
+ {th:"“ธุรกิจออนไลน์” ตามตำราบทที่ 3 ภาษาจีนคือข้อใด",o:["在线业务|zàixiàn yèwù","网上购物|wǎngshàng gòuwù","外卖|wàimài","快递|kuàidì"],e:"在线业务 = ธุรกิจออนไลน์, 网上购物 = ซื้อของออนไลน์"},
+ {th:"คุณอาชาย (น้องชายของพ่อ) ภาษาจีนเรียกว่าอะไร",o:["叔父|shūfù","伯父|bófù","舅舅|jiùjiu","外公|wàigōng"],e:"伯父 = พี่ชายพ่อ, 叔父 = น้องชายพ่อ"},
+ {th:"พี่ชายหรือน้องชายของแม่ ภาษาจีนเรียกว่าอะไร",o:["舅舅|jiùjiu","叔父|shūfù","伯父|bófù","姑姑|gūgu"],e:"舅舅/舅父 ใช้เรียกทั้งพี่ชายและน้องชายของแม่"},
+ {th:"เรียกคุณลุงแซ่หลินที่ไม่ใช่ญาติอย่างให้เกียรติ ข้อใดถูก",o:["林伯伯|Lín bóbo","林舅舅|Lín jiùjiu","伯父林|bófù Lín","林先生们|Lín xiānshengmen"],e:"คนที่ไม่ใช่ญาติ มักเรียกแบบญาติโดยนำด้วยแซ่ เช่น 林伯伯 หรือ 阿伯"},
+ {th:"เจ้าของบ้านต้อนรับแขกตามธรรมเนียม ควรพูดว่าอะไร",o:["请坐。先喝茶吧！|Qǐng zuò. Xiān hē chá ba!","你怎么来了？|Nǐ zěnme lái le?","我不方便。|Wǒ bù fāngbiàn.","你快走吧！|Nǐ kuài zǒu ba!"],e:"เชิญนั่งและดื่มชาก่อน เป็นการต้อนรับขับสู้"},
+ {th:"เมื่อรับประทานอาหารกับผู้ใหญ่ ควรนั่งเมื่อใด",o:["รอให้ผู้ใหญ่เข้าที่นั่งก่อน","นั่งก่อนเพื่อจองที่","นั่งพร้อมกันทุกคน","นั่งเมื่ออาหารมาถึง"],e:"มารยาทจีนและไทยคล้ายกัน คือให้เกียรติผู้อาวุโส"},
+ {th:"การตักอาหารครั้งแรกบนโต๊ะที่มีผู้ใหญ่ ควรทำอย่างไร",o:["ให้ผู้ใหญ่ตักก่อน แล้วจึงตัก","ตักอาหารที่ชอบให้หมดจานก่อน","ตักให้ตัวเองก่อนแล้วตักให้ผู้ใหญ่","ใครหิวก็ตักก่อนได้"],e:"ให้เกียรติผู้ใหญ่ และไม่ควรตักจนหมดจาน ควรเผื่อแผ่ผู้อื่น"},
+ {th:"ชวนเพื่อนไปกินข้าวโดยยังไม่ได้ตกลงว่าใครเลี้ยง ควรพูดว่าอย่างไร",o:["我们一起去吃饭，怎么样？|Wǒmen yìqǐ qù chī fàn, zěnmeyàng?","我请客。|Wǒ qǐng kè.","你请客吧。|Nǐ qǐng kè ba.","我买单。|Wǒ mǎidān."],e:"ถ้าพูด 我请客 จะหมายถึงเราเป็นเจ้ามือ"},
+ {th:"ถ้าทำตะเกียบตกพื้นโดยไม่ตั้งใจ ควรทำอย่างไร",o:["รีบเก็บขึ้นและกล่าวขอโทษ","ปล่อยไว้แล้วขอตะเกียบใหม่","ใช้ตะเกียบนั้นต่อเลย","หัวเราะกลบเกลื่อน"],e:"ตำราระบุว่าต้องรีบเก็บขึ้นและขอโทษ หรืออาจกล่าวคำมงคล"},
+ {th:"ข้อใด “เป็นข้อห้าม” ในการใช้ตะเกียบของจีน",o:["ใช้ตะเกียบเคาะชามข้าวหรือเคาะโต๊ะ","ใช้ตะเกียบกลางคีบอาหารจากจานรวม","วางตะเกียบเสมอกันข้างชามเมื่ออิ่ม","ใช้ตะเกียบพุ้ยข้าวในชาม"],e:"ห้ามเคาะโต๊ะ เคาะชาม ชี้หน้า ปักบนชาม วางไขว้ และเขี่ยอาหาร"},
+ {th:"หน่วย 一斤 (yì jīn) ของไต้หวัน เท่ากับกี่กรัม",o:["600 กรัม","500 กรัม","1,000 กรัม","400 กรัม"],e:"จีนแผ่นดินใหญ่ 1 斤 = 500 กรัม ไต้หวัน 1 斤 = 600 กรัม"},
+ {th:"เงิน “บาท” ของไทย ภาษาจีนเรียกว่าอะไร",o:["泰铢|tàizhū","元|yuán","毛|máo","分|fēn"],e:"泰铢 = บาท, 士丁 (shìdīng) = สตางค์ โดย 100 สตางค์ = 1 บาท"},
+ {th:"คำว่า 帅哥 (shuàigē) ที่แม่ค้าใช้ หมายถึงข้อใด",o:["หนุ่มหล่อ ใช้เรียกลูกค้าผู้ชาย","เถ้าแก่ร้าน","พี่ชายแท้ ๆ","ลูกค้าประจำ"],e:"美女 = สาวสวย, 帅哥 = หนุ่มหล่อ ใช้เรียกลูกค้าเพื่อสร้างบรรยากาศดี"},
+ {th:"ขอชิมผลไม้ก่อนซื้อ ข้อใดพูดถูก",o:["老板，可以试吃吗？|Lǎobǎn, kěyǐ shì chī ma?","老板，可以试穿吗？|Lǎobǎn, kěyǐ shì chuān ma?","老板，一共多少钱？|Lǎobǎn, yígòng duōshao qián?","老板，太贵了！|Lǎobǎn, tài guì le!"],e:"试吃 = ลองชิม, 试穿 = ลองสวม"},
+ {th:"ตามตำรา เสื้อผ้าแบบใดที่ร้านมักไม่ให้ลองสวม",o:["贴身衣服|tiēshēn yīfu ชุดแนบเนื้อ","外套|wàitào เสื้อคลุม","衬衫|chènshān เสื้อเชิ้ต","裤子|kùzi กางเกง"],e:"不可以，贴身衣服不可以试穿的。"},
+ {th:"วันเกิดครบ 60 ปีที่คนไทยเรียกว่า “แซยิด” ภาษาจีนเรียกว่าอะไร",o:["大寿|dàshòu","生日会|shēngrìhuì","红包|hóngbāo","抓周|zhuāzhōu"],e:"大寿 = วันเกิดครบรอบใหญ่ ซึ่งคนจีนส่วนใหญ่จัดแบบนี้เพียงครั้งเดียวในชีวิต"},
+ {th:"ขนมมงคลที่ขาดไม่ได้ในงานวันเกิดแบบจีน คือข้อใด",o:["寿桃|shòutáo ซิ่วท้อ","月饼|yuèbing ขนมไหว้พระจันทร์","汤圆|tāngyuán บัวลอย","饺子|jiǎozi เกี๊ยว"],e:"寿桃 = ขนมรูปลูกท้อ สื่อถึงอายุยืน"},
+ {th:"การนับรอบอายุแบบจีนตามตำรา ต่างจากแบบไทยอย่างไร",o:["จีนนับครบ 10 ปีเป็น 1 รอบ ไทยนับครบ 12 ปีเป็น 1 รอบ","จีนนับครบ 12 ปีเป็น 1 รอบ ไทยนับ 10 ปี","นับเหมือนกันคือ 12 ปี","จีนนับครบ 5 ปีเป็น 1 รอบ"],e:"เช่น ครบ 10 ขวบจัดพิธีรับขวัญเข้าสู่วัยรุ่น"},
+ {th:"เหตุใดชาวจีนไม่นิยมให้พัด 扇子 (shànzi) เป็นของขวัญ",o:["เสียงพ้องกับคำที่มีความหมายว่าแยกจากกัน","เพราะพัดเป็นของใช้ในพิธีศพ","เพราะพัดมีราคาถูกเกินไป","เพราะพัดเป็นของผู้หญิงเท่านั้น"],e:"扇 shàn พ้องเสียงกับ 散 sàn ใน 分散 = แยกจากกัน"},
+ {th:"ใน 休闲 (xiūxián) คำว่า 闲 (xián) หมายถึงอะไร",o:["ว่าง ยามว่าง","ต้นไม้","ลมหายใจ","ทำงาน"],e:"休 = พักผ่อน, 闲 = ว่าง รวมเป็น พักผ่อนหย่อนใจ"},
+ {th:"ทิศ 西北 (xīběi) คือทิศใด",o:["ตะวันตกเฉียงเหนือ","ตะวันออกเฉียงเหนือ","ตะวันตกเฉียงใต้","ตะวันออกเฉียงใต้"],e:"西 = ตะวันตก, 北 = เหนือ (ภาษาจีนเรียกตะวันออก/ตะวันตกก่อนเหนือ/ใต้)"},
+ {th:"ตามบทเรียนบทที่ 9 คนจีนทางตอนเหนือมักบอกทางอย่างไร",o:["บอกเป็นทิศ เช่น 往东 (wǎng dōng) ไปทางตะวันออก","บอกเป็นซ้ายขวาเท่านั้น","บอกเป็นชื่อร้านค้าเท่านั้น","ไม่บอกทาง แต่พาไปส่ง"],e:"ตัวอย่าง: 往东一直走到朝阳北路 ส่วนการบอกทางทั่วไปใช้ 往前走，往左拐"},
+ {th:"邮编 (yóubiān) หมายถึงข้อใด",o:["รหัสไปรษณีย์","ที่อยู่อีเมล","เบอร์โทรศัพท์","โปสการ์ด"],e:"邮编 = รหัสไปรษณีย์ มักเขียนแยกให้เด่นเพื่อง่ายต่อการคัดแยก"},
+ {th:"การเขียนเลขห้องในที่อยู่แบบจีน ต้องตามด้วยคำใด",o:["室|shì","号|hào","区|qū","市|shì"],e:"เช่น 512室 = ห้อง 512 ส่วน 号 = เลขที่, 区 = เขต, 市 = เมือง"},
+ {th:"คำว่า 国家 (guójiā) “ประเทศชาติ” สะท้อนแนวคิดใดของจีน",o:["มองจากหน่วยใหญ่ไปหาหน่วยเล็ก ไม่มีประเทศก็ไม่มีบ้าน","บ้านสำคัญกว่าประเทศ","ประเทศคือครอบครัวใหญ่ที่มีพ่อเป็นหัวหน้า","เป็นคำยืมจากภาษาอังกฤษ"],e:"国 (ประเทศ) + 家 (บ้าน) เหมือนการเขียนวันที่ 年月日 และที่อยู่จากใหญ่ไปเล็ก"},
+ {th:"เมื่อบอกเบอร์โทรศัพท์ เลข 1 ในภาษาจีนมักอ่านว่าอย่างไร",o:["yāo","yī","yí","yì"],e:"เช่น 13166665872 อ่านว่า yāo sān yāo liù……"},
+ {th:"อักษร 明 (míng) = 日 (rì) + 月 (yuè) จัดเป็นอักษรประเภทใด",o:["会意|huìyì อักษรผสมความหมาย","形声|xíngshēng อักษรความหมายและเสียง","象形|xiàngxíng อักษรภาพ","指事|zhǐshì อักษรชี้เฉพาะ"],e:"ดวงอาทิตย์ + ดวงจันทร์ = แสงสว่าง เป็นความหมาย + ความหมาย"},
+ {th:"อักษร 人 (rén) 山 (shān) 木 (mù) จัดเป็นอักษรประเภทใด",o:["象形|xiàngxíng อักษรภาพ","指事|zhǐshì อักษรชี้เฉพาะ","会意|huìyì อักษรผสมความหมาย","形声|xíngshēng อักษรความหมายและเสียง"],e:"อักษรภาพสร้างจากรูปของสิ่งนั้น เป็นอักษรแรกเริ่มของจีน"},
+ {th:"อักษร 本 (běn) 大 (dà) 白 (bái) ตามตำราจัดเป็นอักษรประเภทใด",o:["指事|zhǐshì อักษรชี้เฉพาะ","象形|xiàngxíng อักษรภาพ","会意|huìyì อักษรผสมความหมาย","形声|xíngshēng อักษรความหมายและเสียง"],e:"อักษรชี้เฉพาะเติมขีดบนอักษรภาพ ให้มีความหมายเชิงนามธรรม"}
+]}
+];
+
+/* Original kitten mascot "Momo": cream-pink round face, pink tabby stripes, strawberry on the head */
+function kitty(mood){
+  const happy=mood==="happy", sad=mood==="sad";
+  const eyes = happy
+    ? `<path d="M40 70 q8 -10 16 0" stroke="#3b2433" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M84 70 q8 -10 16 0" stroke="#3b2433" stroke-width="4" fill="none" stroke-linecap="round"/>`
+    : sad
+    ? `<ellipse cx="48" cy="70" rx="7" ry="8" fill="#3b2433"/><ellipse cx="92" cy="70" rx="7" ry="8" fill="#3b2433"/><circle cx="50" cy="67" r="2.6" fill="#fff"/><circle cx="94" cy="67" r="2.6" fill="#fff"/><path d="M38 60 l14 -5 M102 60 l-14 -5" stroke="#3b2433" stroke-width="3" stroke-linecap="round"/><path d="M44 82 q-3 8 0 12 q3 -4 0 -12z" fill="#7fc8ff"/><path d="M96 82 q-3 8 0 12 q3 -4 0 -12z" fill="#7fc8ff"/>`
+    : `<ellipse cx="48" cy="70" rx="8" ry="9.5" fill="#3b2433"/><ellipse cx="92" cy="70" rx="8" ry="9.5" fill="#3b2433"/><circle cx="51" cy="66" r="3.2" fill="#fff"/><circle cx="95" cy="66" r="3.2" fill="#fff"/><circle cx="46" cy="74" r="1.6" fill="#fff"/><circle cx="90" cy="74" r="1.6" fill="#fff"/>`;
+  const mouth = happy
+    ? `<path d="M60 86 q5 12 10 2 q5 10 10 -2" fill="#ff7aa8" stroke="#3b2433" stroke-width="2.5" stroke-linejoin="round"/>`
+    : sad
+    ? `<path d="M62 92 q8 -7 16 0" stroke="#3b2433" stroke-width="3" fill="none" stroke-linecap="round"/>`
+    : `<path d="M62 86 q4 5 8 0 q4 5 8 0" stroke="#3b2433" stroke-width="2.5" fill="none" stroke-linecap="round"/>`;
+  const extra = happy
+    ? `<path d="M118 30 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z" fill="#ffc94d"/><path d="M14 40 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z" fill="#b48cff"/><path d="M122 92 c-4 -6 -12 -1 -6 6 l6 5 6 -5 c6 -7 -2 -12 -6 -6z" fill="#ff5c9a"/>`
+    : sad ? `<path d="M120 26 q6 8 0 12 q-6 -4 0 -12z" fill="#7fc8ff" opacity=".8"/>` : "";
+  const ear = sad ? "rotate(8 70 70)" : "";
+  return `<svg class="kit" viewBox="0 0 140 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${happy?"น้องเหมียวดีใจ":sad?"น้องเหมียวเสียใจ":"น้องเหมียว"}">
+  <g transform="${ear}">
+  <path d="M22 62 L24 18 Q26 12 32 16 L56 36 Z" fill="#fff4f8" stroke="#e8538f" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M30 26 L48 38 L30 50 Z" fill="#ffb3cf"/>
+  <path d="M118 62 L116 18 Q114 12 108 16 L84 36 Z" fill="#fff4f8" stroke="#e8538f" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M110 26 L92 38 L110 50 Z" fill="#ffb3cf"/>
+  </g>
+  <ellipse cx="70" cy="74" rx="54" ry="46" fill="#fff4f8" stroke="#e8538f" stroke-width="4"/>
+  <path d="M60 34 q2 8 0 14 M70 32 q2 9 0 16 M80 34 q2 8 0 14" stroke="#ff9ac0" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <g transform="translate(84 18) rotate(18)"><path d="M0 8 Q12 -4 24 8 Q22 28 12 30 Q2 28 0 8Z" fill="#ff4f7e"/><circle cx="7" cy="12" r="1.6" fill="#ffe08a"/><circle cx="15" cy="10" r="1.6" fill="#ffe08a"/><circle cx="11" cy="19" r="1.6" fill="#ffe08a"/><circle cx="18" cy="18" r="1.6" fill="#ffe08a"/><path d="M4 6 L12 0 L20 6 L12 4Z" fill="#3cc47e"/></g>
+  <ellipse cx="34" cy="86" rx="10" ry="6" fill="#ffb3cf" opacity=".85"/><ellipse cx="106" cy="86" rx="10" ry="6" fill="#ffb3cf" opacity=".85"/>
+  ${eyes}
+  <path d="M66 79 h8 l-4 5 z" fill="#ff7aa8" stroke="#e8538f" stroke-width="1.5" stroke-linejoin="round"/>
+  ${mouth}
+  <path d="M10 76 l18 3 M10 88 l18 -2 M130 76 l-18 3 M130 88 l-18 -2" stroke="#e8538f" stroke-width="2.5" stroke-linecap="round"/>
+  ${extra}
+</svg>`;
+}
+document.getElementById("headKitty").innerHTML=kitty("idle");
+(function(){const sp=document.getElementById("sparkles");const ch=["✦","✧","♡","⋆"];let h="";for(let i=0;i<16;i++){h+=`<i style="left:${Math.round(Math.random()*96)}%;top:${Math.round(Math.random()*96)}%;animation-delay:${(Math.random()*2.6).toFixed(2)}s;font-size:${10+Math.round(Math.random()*10)}px">${ch[i%4]}</i>`}sp.innerHTML=h})();
+
+const CHEER=[["เก่งมากเลยยย!","太棒了！","tài bàng le!"],["ถูกต้องเป๊ะ ปรบมือรัว ๆ","好厉害！","hǎo lìhai!"],["เยี่ยมไปเลย ไปต่อกัน!","真棒！","zhēn bàng!"],["สุดยอด น้องเหมียวภูมิใจ","你真聪明！","nǐ zhēn cōngming!"],["ถูกอีกแล้ว ปังมาก","完全正确！","wánquán zhèngquè!"]];
+const SAD=[["ไม่เป็นไรน้า อ่านเฉลยแล้วสู้ต่อ","加油！","jiāyóu!"],["เกือบแล้ว น้องเหมียวเป็นกำลังใจให้","没关系！","méi guānxi!"],["ฮือ ข้อนี้พลาด จำเฉลยไว้นะ","下次一定行！","xià cì yídìng xíng!"],["ไม่เป็นไร ค่อย ๆ ทวนนะ","别灰心！","bié huīxīn!"]];
+let popTimer=null;
+function showKitty(ok){
+  const pop=document.getElementById("pop"), b=document.getElementById("popBubble");
+  const m=(ok?CHEER:SAD)[Math.floor(Math.random()*(ok?CHEER:SAD).length)];
+  b.innerHTML=kitty(ok?"happy":"sad")+`<div class="msg"><b>${m[0]}</b><span class="zh">${m[1]}</span><span>${m[2]}</span></div>`;
+  pop.className="pop "+(ok?"happy":"sad"); pop.hidden=false; void pop.offsetWidth; pop.classList.add("show");
+  clearTimeout(popTimer); popTimer=setTimeout(()=>{pop.hidden=true},ok?1900:2300);
+  if(ok && !matchMedia("(prefers-reduced-motion: reduce)").matches){
+    const burst=document.createElement("div");burst.className="burst";const e=["💖","✨","🌸","⭐","💗","🎀"];
+    for(let i=0;i<14;i++){const s=document.createElement("span");s.textContent=e[i%e.length];const a=Math.random()*Math.PI-Math.PI;const d=90+Math.random()*90;s.style.setProperty("--dx",Math.cos(a)*d+"px");s.style.setProperty("--dy",Math.sin(a)*d+"px");s.style.setProperty("--rot",(Math.random()*120-60)+"deg");burst.appendChild(s)}
+    document.body.appendChild(burst);setTimeout(()=>burst.remove(),1200);
+  }
+}
+document.getElementById("popBubble").addEventListener("click",()=>{document.getElementById("pop").hidden=true});
+
+function rng(seed){return function(){seed=(seed*1103515245+12345)&0x7fffffff;return seed/0x7fffffff}}
+SECTIONS.forEach((s,si)=>s.qs.forEach((q,qi)=>{
+  const idx=q.o.map((_,i)=>i), r=rng(4253*(si+2)+211*(qi+5));
+  for(let i=idx.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[idx[i],idx[j]]=[idx[j],idx[i]]}
+  q.order=idx; q.correct=idx.indexOf(0);
+}));
+const TOTAL=SECTIONS.reduce((a,s)=>a+s.qs.length,0);
+const ANS_KEY="ram1113-set2-answers", TAB_KEY="ram1113-set2-tab";
+let answers={}; try{answers=JSON.parse(localStorage.getItem(ANS_KEY)||"{}")||{}}catch(e){answers={}}
+let cur=0; try{const t=+localStorage.getItem(TAB_KEY);if(t>=0&&t<SECTIONS.length)cur=t}catch(e){}
+let filter="all", confirmArm=null;
+const $=id=>document.getElementById(id);
+const save=()=>{try{localStorage.setItem(ANS_KEY,JSON.stringify(answers))}catch(e){}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const han=/[一-鿿]/;
+const offsets=[]; {let st=0;SECTIONS.forEach(s=>{offsets.push(st);st+=s.qs.length})}
+const keyOf=(s,qi)=>s.id+"-"+qi;
+function toast(msg){const t=document.createElement("div");t.className="toast";t.textContent=msg;document.body.appendChild(t);setTimeout(()=>t.remove(),1600)}
+function optHTML(t){
+  if(t.includes("|")){const [z,p]=t.split("|");return `<span class="body"><span class="${han.test(z)?"z":""}">${esc(z)}</span><span class="p">${esc(p)}</span></span>`}
+  return `<span class="body"><span>${esc(t)}</span></span>`;
+}
+function stemHTML(s,q){
+  if(q.ch) return `<div>จงเรียงคำต่อไปนี้ให้เป็นประโยคที่ถูกต้อง</div><div class="chunks">${q.ch.map((c,i)=>{const[z,p]=c.split("|");return `<span class="chunk"><span class="n">${i+1}</span><span class="z">${esc(z)}</span><span class="p">${esc(p)}</span></span>`}).join("")}</div>`;
+  if(q.zh) return `<div>${s.id==="fill"?"เลือกคำเติมในช่องว่าง":s.id==="sent"?"ประโยคนี้แปลว่าอะไร":"คำนี้แปลว่าอะไร"}</div><div class="zhline">${esc(q.zh)}</div><div class="pyline">${esc(q.py)}</div>`;
+  return `<div>${s.id==="th-zh"?"ข้อใดแปลว่า “"+esc(q.th)+"”":esc(q.th)}</div>`;
+}
+function qHTML(s,q,qi){
+  const n=offsets[cur]+qi+1, key=keyOf(s,qi), picked=answers[key], done=picked!==undefined;
+  const opts=q.order.map((oi,pos)=>{
+    let cls="opt"; if(done){if(pos===q.correct)cls+=" right";else if(pos===picked)cls+=" wrong"}
+    return `<button class="${cls}" type="button" data-k="${key}" data-pos="${pos}" ${done?"disabled":""}><span class="k">${pos+1}</span>${optHTML(q.o[oi])}</button>`;
+  }).join("");
+  let ex="";
+  if(done){
+    const verdict=picked===-1?`<span class="verdict ok">เฉลย ข้อ ${q.correct+1}</span>`:picked===q.correct?`<span class="verdict ok">ถูกต้อง ♡ ข้อ ${q.correct+1}</span>`:`<span class="verdict no">ยังไม่ถูก · เฉลยข้อ ${q.correct+1}</span>`;
+    const full=q.ans?(()=>{const[z,p]=q.ans.split("|");return `<div class="zhline">${esc(z)}</div><div class="pyline">${esc(p)}</div>`})():"";
+    ex=`<div class="ex">${verdict}${full}<div>${esc(q.e)}</div></div>`;
+  }
+  return `<li class="q" id="q-${key}"><div class="qtop"><span class="qn">${n}</span><div class="qtext">${stemHTML(s,q)}</div></div><div class="opts">${opts}</div>${ex}</li>`;
+}
+function renderTabs(){
+  const el=$("tabs");
+  el.innerHTML=SECTIONS.map((s,i)=>{const d=s.qs.filter((q,qi)=>answers[keyOf(s,qi)]!==undefined).length;return `<button class="tab" role="tab" aria-selected="${i===cur}" data-i="${i}">${s.name}<small>${d}/${s.qs.length}</small></button>`}).join("");
+  el.querySelectorAll(".tab").forEach(b=>b.onclick=()=>go(+b.dataset.i));
+  const act=el.querySelector('[aria-selected="true"]'); if(act) el.scrollTo({left:act.offsetLeft-16,behavior:"smooth"});
+}
+function go(i){cur=i;filter="all";try{localStorage.setItem(TAB_KEY,cur)}catch(e){};render();window.scrollTo({top:0})}
+function render(){
+  renderTabs();
+  const s=SECTIONS[cur];
+  $("secTitle").textContent=`ตอนที่ ${cur+1} ${s.name} · ข้อ ${offsets[cur]+1}–${offsets[cur]+s.qs.length}`;
+  $("secDesc").textContent=s.desc;
+  document.querySelectorAll(".fbtn").forEach(b=>b.setAttribute("aria-pressed",b.dataset.f===filter));
+  const items=s.qs.map((q,qi)=>({q,qi})).filter(({q,qi})=>{const a=answers[keyOf(s,qi)];
+    if(filter==="todo")return a===undefined; if(filter==="wrong")return a!==undefined&&a!==-1&&a!==q.correct; return true});
+  $("qs").innerHTML=items.length?items.map(({q,qi})=>qHTML(s,q,qi)).join(""):`<li class="empty">${filter==="todo"?"ทำครบทุกข้อในหมวดนี้แล้ว เก่งมาก ♡":"ไม่มีข้อที่ตอบผิดในหมวดนี้เลย ปังมาก ✨"}</li>`;
+  const nx=$("nextSec");
+  if(cur<SECTIONS.length-1){nx.hidden=false;nx.textContent=`ไปตอนที่ ${cur+2} ${SECTIONS[cur+1].name} →`;nx.onclick=()=>go(cur+1)}else nx.hidden=true;
+  updateScore();
+}
+function answer(btn){
+  const k=btn.dataset.k, pos=+btn.dataset.pos; answers[k]=pos; save();
+  const s=SECTIONS[cur], qi=+k.slice(s.id.length+1);
+  $("q-"+k).outerHTML=qHTML(s,s.qs[qi],qi);
+  renderTabs(); updateScore(); showKitty(pos===s.qs[qi].correct);
+}
+$("qs").addEventListener("click",e=>{const b=e.target.closest(".opt");if(b&&!b.disabled)answer(b)});
+function updateScore(){
+  let tot=0,done=0,sc=0;
+  SECTIONS.forEach((s,si)=>{let c=0;s.qs.forEach((q,qi)=>{const a=answers[keyOf(s,qi)];if(a!==undefined&&a!==-1){done++;if(a===q.correct)c++}});tot+=c;if(si===cur)sc=c});
+  const s=SECTIONS[cur]; const sd=s.qs.filter((q,qi)=>answers[keyOf(s,qi)]!==undefined).length;
+  $("secScore").textContent=`ถูก ${sc}/${s.qs.length}`;
+  $("allScore").textContent=`รวมทั้งชุด ถูก ${tot}/${TOTAL} · ทำแล้ว ${done}`;
+  $("prog").style.width=(sd/s.qs.length*100)+"%";
+}
+$("jump").onclick=()=>{
+  const s=SECTIONS[cur]; const qi=s.qs.findIndex((q,i)=>answers[keyOf(s,i)]===undefined);
+  if(qi<0){ if(cur<SECTIONS.length-1){toast("หมวดนี้ทำครบแล้ว ไปหมวดถัดไป");go(cur+1)} else toast("ทำครบทุกข้อแล้ว เก่งที่สุด ♡"); return }
+  if(filter==="wrong"){filter="all";render()}
+  const el=$("q-"+keyOf(s,qi)); if(el) el.scrollIntoView({behavior:"smooth",block:"start"});
+};
+document.querySelectorAll(".fbtn").forEach(b=>b.onclick=()=>{filter=b.dataset.f;render()});
+function resetLabels(){$("reset").textContent="ล้างคำตอบหมวดนี้";$("resetAll").textContent="ล้างคำตอบทั้งชุด"}
+$("menuBtn").onclick=()=>{
+  let rows="";
+  SECTIONS.forEach(s=>{let c=0;s.qs.forEach((q,qi)=>{const a=answers[keyOf(s,qi)];if(a!==undefined&&a!==-1&&a===q.correct)c++});rows+=`<span>${s.name}</span><span>${c}/${s.qs.length}</span>`});
+  $("summary").innerHTML=rows; confirmArm=null; resetLabels(); $("sheet").hidden=false;
+};
+$("closeSheet").onclick=()=>$("sheet").hidden=true;
+$("sheet").onclick=e=>{if(e.target.id==="sheet")$("sheet").hidden=true};
+$("showAll").onclick=()=>{const s=SECTIONS[cur];s.qs.forEach((q,qi)=>{const k=keyOf(s,qi);if(answers[k]===undefined)answers[k]=-1});save();$("sheet").hidden=true;render()};
+$("reset").onclick=()=>{ if(confirmArm!=="sec"){confirmArm="sec";resetLabels();$("reset").textContent="แตะอีกครั้งเพื่อยืนยัน";return}
+  const s=SECTIONS[cur];s.qs.forEach((q,qi)=>delete answers[keyOf(s,qi)]);save();$("sheet").hidden=true;render();window.scrollTo({top:0});toast("ล้างคำตอบหมวดนี้แล้ว")};
+$("resetAll").onclick=()=>{ if(confirmArm!=="all"){confirmArm="all";resetLabels();$("resetAll").textContent="แตะอีกครั้งเพื่อยืนยัน";return}
+  answers={};save();$("sheet").hidden=true;go(0);toast("ล้างคำตอบทั้งชุดแล้ว")};
+document.addEventListener("keydown",e=>{if(e.key==="Escape")$("sheet").hidden=true});
+render();
+</script>
+</body>
+</html>
